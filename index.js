@@ -60,7 +60,7 @@ switch (rolledNumber) {
     case 4:
         return "clover"
     case 5:
-        return "bowling bowl"
+        return "bowling ball"
     case 6:
         return "tiger"
     case 7:
