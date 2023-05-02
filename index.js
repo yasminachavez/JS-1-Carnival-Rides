@@ -14,14 +14,14 @@ let waterIsOn = true
 ride1PowerOn = false
 
 if (greenWireConnected){
-    ride1PowerOn = true
+    ride1PowerOn = true;
   }
   
 //Ride 2 works when 
     //green and yellow wires are connected
 ride2PowerOn = false
-if (greenWireConnected && yellowWireConnected) {
-    ride2PowerOn = true
+if (greenWireConnected && yellowWireConnected){
+    ride2PowerOn = true;
 }
 
 //Ride 3 works when:
@@ -30,44 +30,42 @@ if (greenWireConnected && yellowWireConnected) {
     // yellow wire is not connected
 ride3PowerOn = false
 if (greenWireConnected && redWireConnected && waterIsOn && yellowWireConnected){
-    ride3PowerOn = true
+    ride3PowerOn = true;
 }
 
 //Ride 4 has power when:
-    //ride wire is connected
+    //red wire is connected
 ride4PowerOn = false
-if(rolledNumber){
-    ride4PowerOn = true
+if (redWireConnected){
+    ride4PowerOn = true;
 }
 //Ride 4 is a slot machine
     //if a 1 is rolled it should return "star"
-    if(rolledNumber===1){
-        console.log("star")
-    }
     //if a 2 is rolled it should return "car"
-    else if(rolledNumber===2){
-        console.log("car")
-    }
     //if a 3 is rolled it should return "pot of gold"
-    else if(rolledNumber===3){
-        console.log("pot of gold")
-    }
     //if a 4 is rolled it should return "clover"
-    else if(rolledNumber===4){
-        console.log("clover")
-    }
     //if a 5 is rolled it should return "bowling ball"
-    else if(rolledNumber===5){
-        console.log("bowling bowl")
-    }
     //if a 6 is rolled it should return "tiger"
-    else if(rolledNumber===6){
-        console.log("tiger")
-    }
     //if a 7 is rolled it should return "seven"
-    else 
-    {console.log("seven")}
-    
+
 function ride4SlotMachine(rolledNumber){
-    return "nothing"
-}
+
+switch (rolledNumber) {  
+    case 1:
+        return "star"
+    case 2:
+        return "car"
+    case 3:
+        return "pot of gold"
+    case 4:
+        return "clover"
+    case 5:
+        return "bowling bowl"
+    case 6:
+        return "tiger"
+    case 7:
+        return "seven"
+    default:  
+        break;  
+    }
+}    
