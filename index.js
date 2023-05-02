@@ -36,14 +36,37 @@ if (greenWireConnected && redWireConnected && waterIsOn && yellowWireConnected){
 //Ride 4 has power when:
     //ride wire is connected
 ride4PowerOn = false
+if(rolledNumber){
+    ride4PowerOn = true
+}
 //Ride 4 is a slot machine
     //if a 1 is rolled it should return "star"
+    if(rolledNumber===1){
+        console.log("star")
+    }
     //if a 2 is rolled it should return "car"
+    else if(rolledNumber===2){
+        console.log("car")
+    }
     //if a 3 is rolled it should return "pot of gold"
+    else if(rolledNumber===3){
+        console.log("pot of gold")
+    }
     //if a 4 is rolled it should return "clover"
+    else if(rolledNumber===4){
+        console.log("clover")
+    }
     //if a 5 is rolled it should return "bowling ball"
+    else if(rolledNumber===5){
+        console.log("bowling bowl")
+    }
     //if a 6 is rolled it should return "tiger"
+    else if(rolledNumber===6){
+        console.log("tiger")
+    }
     //if a 7 is rolled it should return "seven"
+    else 
+    {console.log("seven")}
     
 function ride4SlotMachine(rolledNumber){
     return "nothing"
